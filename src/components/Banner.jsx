@@ -5,7 +5,7 @@ import './Banner.scss';
 
 const Banner = () => (
     <div className='Banner' >
-      <Tickers symbols={['AMD', 'MSFT', 'AMZN', 'INTC']} />
+      <Tickers symbols={['AMD', 'MSFT', 'AMZN', 'INTC', 'TSM', 'AAPL', 'FB', 'NFLX']} />
     </div>
 );
 

@@ -9,22 +9,11 @@
 :root {
   --banner-width: 100%;
   --banner-height: 100%;
-  --banner-elements: 4;
-  --banner-elements-displayed: 2;
+  --banner-elements: 8; // TODO: Make Dynamic
+  --banner-elements-displayed: 4;  // TODO: Make Dynamic
   --banner-element-width: calc(var(--banner-width) / var(--banner-elements-displayed));
   --banner-animation-duration: calc(var(--banner-elements) * 3s);
 }
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #eee;
-  color: #111;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 .Banner {
   width: var(--banner-width);
