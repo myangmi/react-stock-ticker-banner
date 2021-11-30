@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --banner-width: 100%;
+  --banner-height: 100%;
+  --banner-elements: 4;
+  --banner-elements-displayed: 2;
+  --banner-element-width: calc(var(--banner-width) / var(--banner-elements-displayed));
+  --banner-animation-duration: calc(var(--banner-elements) * 3s);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eee;
+  color: #111;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Banner {
+  width: var(--banner-width);
+  height: var(--banner-height);
+  background-color: black;
+  color: green;
+  overflow: hidden;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--banner-element-width) * var(--banner-elements)));
+  }
+}
+
+.Tickers {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling var(--banner-animation-duration) linear infinite;
+}
+
+.Tickers li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  flex-shrink: 0;
+  width: var(--banner-element-width);
+  max-height: 100%;
+  font-size: calc(var(--banner-height)*3/4); /* 5rem; */
+  white-space: nowrap;
+}
