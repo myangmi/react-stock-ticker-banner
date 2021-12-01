@@ -12,14 +12,14 @@
   --banner-elements: 8; // TODO: Make Dynamic
   --banner-elements-displayed: 4;  // TODO: Make Dynamic
   --banner-element-width: calc(var(--banner-width) / var(--banner-elements-displayed));
-  --banner-animation-duration: calc(var(--banner-elements) * 3s);
+  --banner-animation-duration: calc(var(--banner-elements) * 5s);
 }
 
 .Banner {
   width: var(--banner-width);
   height: var(--banner-height);
   background-color: black;
-  color: green;
+  color: greenyellow;
   overflow: hidden;
 }
 
