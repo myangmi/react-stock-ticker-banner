@@ -1,25 +1,24 @@
-/* eslint-disable arrow-body-style */
 import React from 'react';
-import PropTypes, { string } from 'prop-types';
+import PropTypes from 'prop-types';
 
 import './Tickers.scss';
 
 const propTypes = {
-  quoteData: PropTypes.arrayOf(string),
+  quoteData: PropTypes.object,
 };
 
-const Tickers = ({ symbols }) => {
+const Tickers = ({ quoteData }) => {
   const content = (
     <>
       <ul className='Tickers'>
         {
-          Object.keys(symbols).map((ticker, i) => (
-            <li key={i}>{`${ticker}`}: ${`${symbols[ticker].price}`}</li>
+          Object.keys(quoteData).map((ticker, i) => (
+            <li key={i}>{`${ticker}`}: ${`${quoteData[ticker].price}`}</li>
           ))
         }
         {
-          Object.keys(symbols).map((ticker, i) => (
-            <li key={i}>{`${ticker}`}:  ${`${symbols[ticker].price}`}</li>
+          Object.keys(quoteData).map((ticker, i) => (
+            <li key={i}>{`${ticker}`}:  ${`${quoteData[ticker].price}`}</li>
           ))
         }
       </ul>
@@ -32,5 +31,4 @@ const Tickers = ({ symbols }) => {
 };
 
 Tickers.propTypes = propTypes;
-
 export default Tickers;

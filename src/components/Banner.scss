@@ -19,7 +19,6 @@
   width: var(--banner-width);
   height: var(--banner-height);
   background-color: black;
-  color: greenyellow;
   overflow: hidden;
 }
 
@@ -43,10 +42,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
+  color: greenyellow;
   flex-shrink: 0;
+  font-weight: 600;
   width: var(--banner-element-width);
-  max-height: 100%;
-  font-size: calc(var(--banner-height)*3/4); /* 5rem; */
-  white-space: nowrap;
+  font-size: calc(var(--banner-height)*4/5);
 }

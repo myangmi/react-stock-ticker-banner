@@ -7,7 +7,7 @@ import './Banner.scss';
 const mockSymbols = ['AMD', 'MSFT', 'AMZN', 'INTC', 'TSM', 'AAPL', 'FB', 'NFLX']; // TODO: Implement dynamics symbol selection
 
 const Banner = () => {
-  const [quoteData, setQuoteData] = useState(mockSymbols);
+  const [quoteData, setQuoteData] = useState({});
 
   useEffect(() => {
     axios.get(
@@ -23,7 +23,7 @@ const Banner = () => {
 
   return (
     <div className='Banner' >
-      <Tickers symbols={quoteData} />
+      <Tickers quoteData={quoteData} />
     </div>
   );
 };

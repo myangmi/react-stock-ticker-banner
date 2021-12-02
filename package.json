@@ -9,9 +9,6 @@
     "axios": "^0.24.0",
     "node-sass": "^6.0.1",
     "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
     "sass": "^1.43.4",
     "web-vitals": "^1.0.1"
   },
@@ -47,6 +44,13 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^19.0.1",
     "eslint-plugin-react": "^7.27.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
     "rimraf": "^3.0.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
