@@ -17,6 +17,8 @@
     "clean:all": "rimraf ./node_modules",
     "clean:install": "npm run clean:all && npm install",
     "build": "react-scripts build",
+    "jest": "jest",
+    "jest:coverage": "jest --coverage",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -41,11 +43,14 @@
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "cross-env": "^7.0.3",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^19.0.1",
     "eslint-plugin-react": "^7.27.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "jest": "^26.6.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-scripts": "4.0.3",
     "rimraf": "^3.0.2"
   },
