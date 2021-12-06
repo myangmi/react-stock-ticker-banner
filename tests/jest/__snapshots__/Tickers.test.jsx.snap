@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tickers should render mocked data properly 1`] = `
+<Fragment>
+  <ul
+    className="Tickers"
+  >
+    <li
+      key="0"
+    >
+      AMD
+      : $
+      150.48
+    </li>
+    <li
+      key="1"
+    >
+      MSFT
+      : $
+      327.77
+    </li>
+    <li
+      key="2"
+    >
+      AMZN
+      : $
+      3461.5
+    </li>
+    <li
+      key="3"
+    >
+      INTC
+      : $
+      49.27
+    </li>
+    <li
+      key="4"
+    >
+      TSM
+      : $
+      121.35
+    </li>
+    <li
+      key="5"
+    >
+      AAPL
+      : $
+      169.51
+    </li>
+    <li
+      key="6"
+    >
+      FB
+      : $
+      307.57
+    </li>
+    <li
+      key="7"
+    >
+      NFLX
+      : $
+      613.96
+    </li>
+    <li
+      key="0"
+    >
+      AMD
+      :  $
+      150.48
+    </li>
+    <li
+      key="1"
+    >
+      MSFT
+      :  $
+      327.77
+    </li>
+    <li
+      key="2"
+    >
+      AMZN
+      :  $
+      3461.5
+    </li>
+    <li
+      key="3"
+    >
+      INTC
+      :  $
+      49.27
+    </li>
+    <li
+      key="4"
+    >
+      TSM
+      :  $
+      121.35
+    </li>
+    <li
+      key="5"
+    >
+      AAPL
+      :  $
+      169.51
+    </li>
+    <li
+      key="6"
+    >
+      FB
+      :  $
+      307.57
+    </li>
+    <li
+      key="7"
+    >
+      NFLX
+      :  $
+      613.96
+    </li>
+  </ul>
+</Fragment>
+`;
+
+exports[`Tickers should render properly 1`] = `
+<Fragment>
+  <ul
+    className="Tickers"
+  />
+</Fragment>
+`;

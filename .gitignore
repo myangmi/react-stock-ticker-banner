@@ -6,7 +6,8 @@
 .pnp.js
 
 # testing
-/coverage
+/tests/jest/reports
+/tests/jest/reports/**
 
 # production
 /build

@@ -7,6 +7,10 @@ const propTypes = {
   quoteData: PropTypes.object,
 };
 
+const defaultProps = {
+  quoteData: {},
+};
+
 const Tickers = ({ quoteData }) => {
   const content = (
     <>
@@ -30,5 +34,6 @@ const Tickers = ({ quoteData }) => {
   );
 };
 
+Tickers.defaultProps = defaultProps;
 Tickers.propTypes = propTypes;
 export default Tickers;
