@@ -4,13 +4,16 @@ import View from './View.jsx';
 
 import './Container.scss';
 
+const mockTickers = ['AMD', 'MSFT', 'AMZN', 'INTC', 'TSM', 'AAPL', 'FB', 'NFLX'];
+
 const propTypes = {
-  Tickers: PropTypes.arrayOf(string),
+  tickers: PropTypes.arrayOf(string),
+  apiKey: PropTypes.string,
 };
 
-const Container = ({ Tickers }) => (
+const Container = ({ tickers, apiKey }) => (
   <div className='Container' >
-    <View Tickers={Tickers} />
+    <View tickers={mockTickers} apiKey={apiKey} />
   </div>
 );
 

@@ -5,34 +5,7 @@ exports[`Banner should render properly 1`] = `
   className="Banner"
 >
   <Tickers
-    quoteData={
-      Object {
-        "AAPL": Object {
-          "price": 169.51,
-        },
-        "AMD": Object {
-          "price": 150.48,
-        },
-        "AMZN": Object {
-          "price": 3461.5,
-        },
-        "FB": Object {
-          "price": 307.57,
-        },
-        "INTC": Object {
-          "price": 49.27,
-        },
-        "MSFT": Object {
-          "price": 327.77,
-        },
-        "NFLX": Object {
-          "price": 613.96,
-        },
-        "TSM": Object {
-          "price": 121.35,
-        },
-      }
-    }
+    quoteData={Object {}}
   />
 </div>
 `;

@@ -4,6 +4,16 @@ exports[`View should render properly 1`] = `
 <div
   className="View"
 >
-  <Banner />
+  <Banner
+    apiKey="mockAPIKey"
+    tickers={
+      Array [
+        "AMD",
+        "INTC",
+        "TSM",
+        "AAPL",
+      ]
+    }
+  />
 </div>
 `;

@@ -5,12 +5,13 @@ import Banner from './Banner.jsx';
 import './View.scss';
 
 const propTypes = {
-  Tickers: PropTypes.arrayOf(string),
+  tickers: PropTypes.arrayOf(string).isRequired,
+  apiKey: PropTypes.string,
 };
 
-const View = ({ Tickers }) => (
+const View = ({ tickers, apiKey }) => (
   <div className='View' >
-    <Banner Tickers={Tickers} />
+    <Banner tickers={tickers} apiKey={apiKey} />
   </div>
 );
 

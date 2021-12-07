@@ -1,42 +1,26 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes, { string } from 'prop-types';
 import axios from 'axios';
 import Tickers from './Tickers.jsx';
 
 import './Banner.scss';
 
-const mockSymbols = ['AMD', 'MSFT', 'AMZN', 'INTC', 'TSM', 'AAPL', 'FB', 'NFLX']; // TODO: Implement dynamics symbol selection
+const propTypes = {
+  tickers: PropTypes.arrayOf(string).isRequired,
+  apiKey: PropTypes.string,
+};
 
-const Banner = () => {
-  const [quoteData, setQuoteData] = useState({
-    AMD: {
-      price: 150.48,
-    },
-    MSFT: {
-      price: 327.77,
-    },
-    AMZN: {
-      price: 3461.5,
-    },
-    INTC: {
-      price: 49.27,
-    },
-    TSM: {
-      price: 121.35,
-    },
-    AAPL: {
-      price: 169.51,
-    },
-    FB: {
-      price: 307.57,
-    },
-    NFLX: {
-      price: 613.96,
-    },
-  });
+const defaultProps = {
+  apiKey: 'Tpk_f4c74570f4f44b0facf47abd0ba3ae4c', // TODO: Remove personal Sandbox Token
+};
+
+const Banner = ({ tickers, apiKey }) => {
+  const [quoteData, setQuoteData] = useState({});
+  const apiPrefix = (apiKey[0] === 'T') ? 'https://sandbox.iexapis.com' : 'https://cloud.iexapis.com';
 
   useEffect(() => {
     axios.get(
-      `https://sandbox.iexapis.com/stable/stock/market/batch?symbols=${mockSymbols}&token=Tpk_f4c74570f4f44b0facf47abd0ba3ae4c&types=price`,
+      `${apiPrefix}/stable/stock/market/batch?symbols=${tickers}&token=${apiKey}&types=price`,
     ).then(
       (res) => {
         setQuoteData(res.data);
@@ -53,4 +37,6 @@ const Banner = () => {
   );
 };
 
+Banner.defaultProps = defaultProps;
+Banner.propTypes = propTypes;
 export default Banner;
