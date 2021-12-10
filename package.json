@@ -1,7 +1,7 @@
 {
   "name": "react-stock-ticker-banner",
   "version": "0.1.0",
-  "main": "dist/main.js",
+  "main": "./dist/main.js",
   "author": "Michael Yangmi",
   "private": true,
   "babel": {
