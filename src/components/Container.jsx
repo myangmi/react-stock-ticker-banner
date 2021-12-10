@@ -12,7 +12,7 @@ const propTypes = {
 };
 
 const Container = ({ tickers, apiKey }) => (
-  <div className='Container' >
+  <div className='Container'>
     <View tickers={mockTickers} apiKey={apiKey} />
   </div>
 );
